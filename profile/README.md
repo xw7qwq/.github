@@ -1,3 +1,5 @@
+![xw7 点阵字标](https://raw.githubusercontent.com/xw7qwq/.github/main/assets/xw7-dotmatrix.svg)
+
 # 🥹 xw7
 
 > Personal telemetry, competitive programming archives, and digital garden.

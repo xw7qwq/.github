@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title description">
+  <title id="title">xw7 — dot matrix wordmark</title>
+  <desc id="description">A mint-green xw7 wordmark drawn with circular dots on a dark, subtly dotted background.</desc>
+  <defs>
+    <radialGradient id="background" cx="50%" cy="50%" r="70%">
+      <stop offset="0" stop-color="#17352e"/>
+      <stop offset="1" stop-color="#0d171b"/>
+    </radialGradient>
+    <linearGradient id="ink" x1="304" y1="0" x2="896" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dbffeb"/>
+      <stop offset="0.5" stop-color="#b0f3d3"/>
+      <stop offset="1" stop-color="#79dfbc"/>
+    </linearGradient>
+    <pattern id="grid" x="0" y="8" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="0" cy="0" r="1.2" fill="#749d8d" fill-opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect x="0.5" y="0.5" width="1199" height="399" rx="24" fill="url(#background)" stroke="#284138"/>
+  <rect x="1" y="1" width="1198" height="398" rx="23.5" fill="url(#grid)"/>
+  <g fill="url(#ink)">
+    <!-- x: 7 × 7 dot matrix, 24-unit pitch. -->
+    <g id="glyph-x">
+      <circle cx="312" cy="128" r="8.25"/>
+      <circle cx="456" cy="128" r="8.25"/>
+      <circle cx="336" cy="152" r="8.25"/>
+      <circle cx="432" cy="152" r="8.25"/>
+      <circle cx="360" cy="176" r="8.25"/>
+      <circle cx="408" cy="176" r="8.25"/>
+      <circle cx="384" cy="200" r="8.25"/>
+      <circle cx="360" cy="224" r="8.25"/>
+      <circle cx="408" cy="224" r="8.25"/>
+      <circle cx="336" cy="248" r="8.25"/>
+      <circle cx="432" cy="248" r="8.25"/>
+      <circle cx="312" cy="272" r="8.25"/>
+      <circle cx="456" cy="272" r="8.25"/>
+    </g>
+    <!-- w: 7 × 7 dot matrix, 24-unit pitch. -->
+    <g id="glyph-w">
+      <circle cx="528" cy="128" r="8.25"/>
+      <circle cx="672" cy="128" r="8.25"/>
+      <circle cx="528" cy="152" r="8.25"/>
+      <circle cx="672" cy="152" r="8.25"/>
+      <circle cx="528" cy="176" r="8.25"/>
+      <circle cx="672" cy="176" r="8.25"/>
+      <circle cx="528" cy="200" r="8.25"/>
+      <circle cx="600" cy="200" r="8.25"/>
+      <circle cx="672" cy="200" r="8.25"/>
+      <circle cx="528" cy="224" r="8.25"/>
+      <circle cx="600" cy="224" r="8.25"/>
+      <circle cx="672" cy="224" r="8.25"/>
+      <circle cx="528" cy="248" r="8.25"/>
+      <circle cx="576" cy="248" r="8.25"/>
+      <circle cx="624" cy="248" r="8.25"/>
+      <circle cx="672" cy="248" r="8.25"/>
+      <circle cx="552" cy="272" r="8.25"/>
+      <circle cx="648" cy="272" r="8.25"/>
+    </g>
+    <!-- 7: 7 × 7 dot matrix, 24-unit pitch. -->
+    <g id="glyph-7">
+      <circle cx="744" cy="128" r="8.25"/>
+      <circle cx="768" cy="128" r="8.25"/>
+      <circle cx="792" cy="128" r="8.25"/>
+      <circle cx="816" cy="128" r="8.25"/>
+      <circle cx="840" cy="128" r="8.25"/>
+      <circle cx="864" cy="128" r="8.25"/>
+      <circle cx="888" cy="128" r="8.25"/>
+      <circle cx="888" cy="152" r="8.25"/>
+      <circle cx="864" cy="176" r="8.25"/>
+      <circle cx="840" cy="200" r="8.25"/>
+      <circle cx="816" cy="224" r="8.25"/>
+      <circle cx="792" cy="248" r="8.25"/>
+      <circle cx="768" cy="272" r="8.25"/>
+    </g>
+  </g>
+</svg>
