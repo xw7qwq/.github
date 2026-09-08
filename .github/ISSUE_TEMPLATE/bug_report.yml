@@ -1,0 +1,22 @@
+name: 问题反馈
+description: 报告可复现的故障或错误行为
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 实际结果与预期结果
+      description: 说明哪里出错，以及你期望看到什么。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤
+      description: 提供最小复现、相关页面或公开题目链接。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境与日志
+      description: 提供版本、系统、浏览器及相关日志。先移除 Token、Cookie 和个人敏感数据。
