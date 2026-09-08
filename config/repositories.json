@@ -1,0 +1,58 @@
+{
+  "organization": "xw7qwq",
+  "repositories": [
+    {
+      "name": ".github",
+      "website": "https://github.com/xw7qwq",
+      "topics": ["github-profile", "community-health", "documentation"],
+      "default_branch": "main",
+      "required_checks": ["repository-check"],
+      "branches": [
+        {"name": "main", "purpose": "组织主页、共享规范与配置核验", "prevent_force_push": true}
+      ]
+    },
+    {
+      "name": "codeflare",
+      "website": "https://codeflare.lucius7.dev",
+      "topics": ["competitive-programming", "algorithms", "cpp", "atcoder", "codeforces", "qoj"],
+      "default_branch": "main",
+      "required_checks": ["archive"],
+      "branches": [
+        {"name": "main", "purpose": "算法源码、模板与归档工具", "prevent_force_push": true},
+        {"name": "docs/project-guide", "purpose": "独立文档源码与构建", "prevent_force_push": true, "required_checks": ["archive", "documentation"]},
+        {"name": "gh-pages", "purpose": "手工维护的网站源码和生成文档", "prevent_force_push": false}
+      ]
+    },
+    {
+      "name": "ojflare",
+      "website": "https://ojflare.lucius7.dev",
+      "topics": ["competitive-programming", "atcoder", "codeforces", "qoj", "nowcoder", "github-pages", "dashboard", "python"],
+      "default_branch": "main",
+      "required_checks": ["check"],
+      "branches": [
+        {"name": "main", "purpose": "看板与同步器源码", "prevent_force_push": true},
+        {"name": "data/snapshots", "purpose": "自动同步快照与请求状态", "prevent_force_push": true}
+      ]
+    },
+    {
+      "name": "macflare",
+      "website": "https://macflare.lucius7.dev",
+      "topics": ["apple-music", "bash", "cloudflare-workers", "macos", "now-page", "privacy"],
+      "default_branch": "main",
+      "required_checks": ["worker", "macos-agent"],
+      "branches": [
+        {"name": "main", "purpose": "macOS 采集、Worker API 与站点文档", "prevent_force_push": true}
+      ]
+    },
+    {
+      "name": "nfuwari",
+      "website": "https://blog.lucius7.cn/",
+      "topics": ["astro", "blog", "fuwari", "github-pages", "katex", "markdown", "typescript"],
+      "default_branch": "main",
+      "required_checks": ["Lint, check and build"],
+      "branches": [
+        {"name": "main", "purpose": "博客文章、主题与静态构建", "prevent_force_push": true}
+      ]
+    }
+  ]
+}
