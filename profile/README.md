@@ -44,4 +44,4 @@ flowchart TB
 
 ## 了解与交流
 
-各项目的使用方式、配置说明与开发文档请从上方仓库入口查看。项目相关的问题与建议，欢迎提交到对应仓库的 Issues；贡献约定与许可证以各仓库说明为准。
+各项目的使用方式、配置说明与开发文档请从上方仓库入口查看。项目相关的问题与建议，欢迎提交到对应仓库的 Issues；贡献前请阅读[组织贡献规范](https://github.com/xw7qwq/.github/blob/main/CONTRIBUTING.md)与[仓库维护约定](https://github.com/xw7qwq/.github/blob/main/docs/maintenance.md)，项目专用要求与许可证以各仓库说明为准。
