@@ -1,0 +1,27 @@
+name: Organization audit (public)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Run offline audit tests
+        run: python3 -m unittest discover -s scripts -p 'test_audit_organization.py' -v
+      - name: Audit organization configuration
+        # This scope checks public metadata and effective branch rules only.
+        # Full merge-setting verification uses existing local gh credentials.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/audit_organization.py --scope public

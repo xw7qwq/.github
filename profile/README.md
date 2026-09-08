@@ -6,14 +6,16 @@
 
 这里是 **xw7** 的个人基础设施与项目集合：用 **macflare** 记录设备状态，用 **codeflare** 沉淀竞赛代码，用 **ojflare** 整理刷题足迹，并围绕 **nfuwari** 构建自己的数字花园。
 
+[使用与支持](https://github.com/xw7qwq/.github/blob/main/SUPPORT.md) · [参与贡献](https://github.com/xw7qwq/.github/blob/main/CONTRIBUTING.md) · [安全报告](https://github.com/xw7qwq/.github/blob/main/SECURITY.md) · [维护指南](https://github.com/xw7qwq/.github/blob/main/docs/maintainer-guide.md)
+
 ## 项目导航
 
-| 项目 | 定位 | 主要内容 |
+| 项目 | 主要用途 | 网站与文档 |
 | --- | --- | --- |
-| [macflare](https://github.com/xw7qwq/macflare) | 个人状态遥测 | 通过 macOS 原生工具采集 Apple Music、应用、电池与系统负载，由 Cloudflare 提供状态 JSON 和 SVG 徽章。 |
-| [codeflare](https://github.com/xw7qwq/codeflare) | 竞赛编程归档 | 按平台与比赛整理 C++ 源码、算法模板和提交记录，保留可回顾的解题过程。 |
-| [ojflare](https://github.com/xw7qwq/ojflare) | 在线评测记录 | 汇总 Codeforces、AtCoder、QOJ 与牛客公开编程练习记录，展示解题趋势与比赛进度，并提供 JSON 快照。 |
-| [nfuwari](https://github.com/xw7qwq/nfuwari) | 数字花园 | 基于 Astro 与 Fuwari 的个人博客，承载文章、笔记与长期积累。 |
+| [macflare](https://github.com/xw7qwq/macflare) | 用 macOS 原生工具采集音乐、应用和设备状态，提供 JSON API 与 SVG 徽章 | [网站](https://macflare.lucius7.dev/) · [API](https://macflare.lucius7.dev/api) |
+| [codeflare](https://github.com/xw7qwq/codeflare) | 按平台与比赛检索 C++ 源码、算法模板和提交归档 | [源码阅读器](https://codeflare.lucius7.dev/) · [项目文档](https://codeflare.lucius7.dev/docs/) |
+| [ojflare](https://github.com/xw7qwq/ojflare) | 查看多平台解题趋势、Rating 与比赛进度，读取公开统计快照 | [看板](https://ojflare.lucius7.dev/) · [API](https://github.com/xw7qwq/ojflare/blob/main/docs/API.md) |
+| [nfuwari](https://github.com/xw7qwq/nfuwari) | 基于 Astro / Fuwari 的个人博客，承载文章与笔记 | [博客](https://blog.lucius7.cn/) · [写作指南](https://github.com/xw7qwq/nfuwari/blob/main/docs/WRITING.zh-CN.md) |
 
 ## 架构概览
 
@@ -44,4 +46,4 @@ flowchart TB
 
 ## 了解与交流
 
-各项目的使用方式、配置说明与开发文档请从上方仓库入口查看。项目相关的问题与建议，欢迎提交到对应仓库的 Issues；贡献前请阅读[组织贡献规范](https://github.com/xw7qwq/.github/blob/main/CONTRIBUTING.md)与[仓库维护约定](https://github.com/xw7qwq/.github/blob/main/docs/maintenance.md)，项目专用要求与许可证以各仓库说明为准。
+项目相关的问题与建议请提交到对应仓库的 Issues，具体入口见[使用与支持](https://github.com/xw7qwq/.github/blob/main/SUPPORT.md)。贡献前请阅读[组织贡献规范](https://github.com/xw7qwq/.github/blob/main/CONTRIBUTING.md)、[协作行为准则](https://github.com/xw7qwq/.github/blob/main/CODE_OF_CONDUCT.md)与[仓库维护约定](https://github.com/xw7qwq/.github/blob/main/docs/maintenance.md)；项目专用要求与许可证以各仓库说明为准。
