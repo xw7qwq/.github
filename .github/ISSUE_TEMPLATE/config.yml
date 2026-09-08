@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
-  - name: 使用与支持
+  - name: Help and support
     url: https://github.com/xw7qwq/.github/blob/main/SUPPORT.md
-    about: 按场景选择项目文档与反馈入口。
-  - name: 私密报告安全问题
+    about: Find the right project documentation and feedback channel.
+  - name: Report a security issue privately
     url: https://github.com/xw7qwq/.github/blob/main/SECURITY.md
-    about: 漏洞与敏感复现请使用对应仓库的私密报告入口。
+    about: Use the relevant repository's private reporting channel for vulnerabilities and sensitive reproductions.

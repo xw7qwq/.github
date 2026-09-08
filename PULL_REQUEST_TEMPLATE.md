@@ -1,15 +1,15 @@
-## 问题与改动
+## Problem and change
 
-说明问题、触发条件，以及改动后的行为。有关联 Issue 时在这里链接。
+Describe the problem, what triggers it, and the resulting behavior. Link any related Issues here.
 
-## 验证
+## Validation
 
-列出实际执行的测试 / 构建及结果。界面改动附截图；未执行的检查说明原因。
+List the tests and builds actually run, with their results. Include screenshots for interface changes. Explain any checks that were not run.
 
-## 兼容性与维护
+## Compatibility and maintenance
 
-有 API、数据、配置或部署变化时，说明兼容性、迁移方式与文档更新。没有则写“不涉及”。
+For API, data, configuration, or deployment changes, explain compatibility, migration steps, and documentation updates. Otherwise, write "Not applicable."
 
-- [ ] 已检查完整 diff，确认本次变更范围。
-- [ ] 已完成仓库要求的验证，并解决审查讨论。
-- [ ] 已同步必要文档，未提交凭据或无关产物。
+- [ ] I reviewed the complete diff and confirmed the scope of this change.
+- [ ] I completed the repository's required validation and resolved review discussions.
+- [ ] I updated the necessary documentation and excluded credentials and unrelated artifacts.

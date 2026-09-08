@@ -1,19 +1,19 @@
-# 维护者操作指南
+# Maintainer guide
 
-[贡献规范](../CONTRIBUTING.md)说明日常 PR 流程，[维护约定](maintenance.md)说明当前分支与检查。此页用于新增项目、变更部署或排查配置差异。
+[Contributing](../CONTRIBUTING.md) covers the everyday PR process, and [repository maintenance](maintenance.md) records current branches and checks. Use this guide when adding a project, changing deployment, or investigating configuration drift.
 
-## 新增仓库
+## Add a repository
 
-1. 写明项目用途、运行要求、验证命令、实际部署地址和反馈位置。许可证必须依据代码来源与作者授权单独确定。
-2. 建立当前项目需要的测试或构建，确保每个面向主分支的 PR 都会产生稳定的检查名。没有必要时不引入服务账号、私有凭据或定时任务。
-3. 为默认分支设置禁止强推、禁止删除、PR、讨论解决和必需检查；单人维护维持 0 个强制他人批准。先确认检查真实运行，再启用门禁。
-4. 自动数据或发布产物需要写回 Git 时，使用用途明确的长期分支。为其保留必要的正常写入能力，不给予主分支通用绕过权限。
-5. 开启私密漏洞报告，确认默认支持、安全与行为准则可继承，或提供项目专用文件。
-6. 在 [repositories.json](../config/repositories.json) 登记名称、网站、标签、长期分支与必需检查，并更新[组织主页](../profile/README.md)和[支持导航](../SUPPORT.md)。
+1. Document its purpose, runtime requirements, validation commands, deployed URL, and feedback channel. Determine its license from the code's provenance and authors' permissions.
+2. Add the tests or builds the project needs, with stable check names for every PR targeting the default branch. Introduce service accounts, private credentials, and scheduled tasks only when needed.
+3. Protect the default branch against force pushes and deletion. Require PRs, resolved review discussions, and checks. Keep required approvals at 0 for a single maintainer. Confirm that checks actually run before making them mandatory.
+4. Use dedicated permanent branches when automated data or published artifacts must be written to Git. Allow the normal writes they need without granting blanket bypass access to the default branch.
+5. Enable private vulnerability reporting and verify that shared support, security, and conduct files are inherited, or provide project-specific files.
+6. Register the name, website, topics, permanent branches, and required checks in [repositories.json](../config/repositories.json). Update the [organization profile](../profile/README.md) and [support navigation](../SUPPORT.md).
 
-## 检查配置是否仍符合约定
+## Check repository settings
 
-本地需要 Python 3.11+ 和已登录的 GitHub CLI：
+Local checks require Python 3.11+ and an authenticated GitHub CLI:
 
 ```sh
 python3 scripts/check_repository.py
@@ -21,20 +21,20 @@ python3 -m unittest discover -s scripts -p 'test_*.py'
 python3 scripts/audit_organization.py
 ```
 
-也可在本仓库 Actions 中手动运行 **Organization audit (public)**。该工作流调用 `python3 scripts/audit_organization.py --scope public`，只核验公开可见的网站、标签、分支与有效规则；合并设置因跨仓库令牌权限限制会明确列入 `not_checked`，不能将此结果视为完整配置检查。完整检查使用前述本地命令和现有管理员 GitHub CLI 登录，不需要新增 Token 或 Secret。
+You can also manually run **Organization audit (public)** from this repository's Actions tab. It runs `python3 scripts/audit_organization.py --scope public` to check publicly visible websites, topics, branches, and effective rules. Cross-repository token permissions limit access to merge settings, so those settings are explicitly listed in `not_checked`. Use the local command above with an existing administrator GitHub CLI login to include them. No new token or secret is needed.
 
-两种范围都只读取配置，不修改权限、分支或内容，不定时运行，也不会因正常开发中的临时分支或开放 PR 而失败。
+Both scopes are read-only: they do not change permissions, branches, or content, run on a schedule, or fail because normal development has temporary branches or open PRs.
 
-核验工具检查清单中的仓库地址与标签、合并设置、长期分支和 GitHub 当前有效规则。`full` 表示覆盖本工具定义的全部检查；它不代表代码审查、生产可用性检查或安全审计。规则集绕过者、经典分支保护细项、成员权限和私密安全配置仍应在 GitHub 设置中核对。API 或权限错误会单独报告，不能当作检查通过。
+The tool checks registered repository URLs and topics, merge settings, permanent branches, and GitHub's effective rules. `full` means all checks defined by this tool. It is not a code review, production availability check, or security audit. Verify ruleset bypass actors, classic branch protection details, member permissions, and private security settings separately in GitHub. API and permission errors are reported separately and never treated as passing checks.
 
-## 改名、迁移与部署
+## Rename, migrate, and deploy
 
-- 仓库改名后检查源码链接、README、OpenAPI、站点导航、徽章、安装命令和工作流中的地址；不要长期依赖重定向。
-- 修改检查名时，同时更新工作流、分支规则、配置清单与维护约定；更新后用一个真实 PR 核验门禁。
-- 修改域名时分别核对仓库 About、Pages / Worker 配置、DNS / 代理、站点 canonical 和公开 API 文档。仓库元数据检查不能代替 TLS 或线上验证。
-- 发布前完成适用检查，发布后确认运行记录、受影响路由与数据版本。失败时保留最近成功的数据或产物，根据日志判断是代码问题、上游失败还是平台瞬态。
-- 回退源码通过 revert PR 完成，不强推共享主线；生产部署回退使用对应托管平台的已有发布记录。迁移数据格式时保留兼容读取或明确恢复步骤。
+- After renaming a repository, update source links, READMEs, OpenAPI documents, site navigation, badges, installation commands, and workflow URLs. Avoid relying on redirects indefinitely.
+- When renaming a check, update the workflow, branch rules, registry, and maintenance documentation together. Verify the gate with a real PR afterward.
+- When changing a domain, check repository About settings, Pages or Worker configuration, DNS and proxies, site canonical URLs, and public API documentation. Metadata checks do not replace TLS or live verification.
+- Complete applicable checks before deployment. Afterward, verify the run, affected routes, and data version. On failure, retain the latest successful data or artifacts and use logs to distinguish code defects, upstream failures, and temporary platform issues.
+- Revert shared source through a revert PR. Use the hosting platform's existing deployment history for production rollbacks. Keep compatible readers or document recovery steps when migrating data formats.
 
-## 归档项目
+## Archive a project
 
-先更新 README 和支持入口，说明替代项目或停止维护状态；处理开放 PR 与未合并工作，并核对域名、发布任务和仍运行的客户端。确认不再有必要写入后再归档，不直接删除仓库或长期分支。
+Update the README and support links to explain its maintenance status or replacement. Resolve open PRs and unmerged work, then check domains, publishing jobs, and active clients. Archive only after confirming that further writes are unnecessary. Preserve repositories and permanent branches.

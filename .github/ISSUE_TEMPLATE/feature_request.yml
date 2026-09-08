@@ -1,17 +1,17 @@
-name: 功能建议
-description: 描述使用场景与期望的改进
+name: Feature request
+description: Describe a use case and a proposed improvement
 body:
   - type: textarea
     id: use_case
     attributes:
-      label: 使用场景
-      description: 你正在尝试完成什么？现有方式有什么困难？
+      label: Use case
+      description: What are you trying to do, and what makes it difficult today?
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: 期望的行为
-      description: 描述希望得到的结果，可以附示例或替代方案。
+      label: Desired behavior
+      description: Describe the outcome you want. Include examples or alternatives if useful.
     validations:
       required: true
