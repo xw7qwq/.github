@@ -8,7 +8,7 @@
       "default_branch": "main",
       "required_checks": ["repository-check"],
       "branches": [
-        {"name": "main", "purpose": "组织主页、共享规范与配置核验", "prevent_force_push": true}
+        {"name": "main", "purpose": "Organization profile, shared guidelines, and configuration audits", "prevent_force_push": true}
       ]
     },
     {
@@ -18,9 +18,9 @@
       "default_branch": "main",
       "required_checks": ["archive"],
       "branches": [
-        {"name": "main", "purpose": "算法源码、模板与归档工具", "prevent_force_push": true},
-        {"name": "docs/project-guide", "purpose": "独立文档源码与构建", "prevent_force_push": true, "required_checks": ["archive", "documentation"]},
-        {"name": "gh-pages", "purpose": "手工维护的网站源码和生成文档", "prevent_force_push": false}
+        {"name": "main", "purpose": "Algorithm solutions, templates, and archive tools", "prevent_force_push": true},
+        {"name": "docs/project-guide", "purpose": "Dedicated documentation sources and builds", "prevent_force_push": true, "required_checks": ["archive", "documentation"]},
+        {"name": "gh-pages", "purpose": "Manually maintained website sources and generated documentation", "prevent_force_push": false}
       ]
     },
     {
@@ -30,8 +30,8 @@
       "default_branch": "main",
       "required_checks": ["check"],
       "branches": [
-        {"name": "main", "purpose": "看板与同步器源码", "prevent_force_push": true},
-        {"name": "data/snapshots", "purpose": "自动同步快照与请求状态", "prevent_force_push": true}
+        {"name": "main", "purpose": "Dashboard and synchronization tool sources", "prevent_force_push": true},
+        {"name": "data/snapshots", "purpose": "Automatically synchronized snapshots and request status", "prevent_force_push": true}
       ]
     },
     {
@@ -41,7 +41,7 @@
       "default_branch": "main",
       "required_checks": ["worker", "macos-agent"],
       "branches": [
-        {"name": "main", "purpose": "macOS 采集、Worker API 与站点文档", "prevent_force_push": true}
+        {"name": "main", "purpose": "macOS collection agent, Worker API, and website documentation", "prevent_force_push": true}
       ]
     },
     {
@@ -51,7 +51,7 @@
       "default_branch": "main",
       "required_checks": ["Lint, check and build"],
       "branches": [
-        {"name": "main", "purpose": "博客文章、主题与静态构建", "prevent_force_push": true}
+        {"name": "main", "purpose": "Blog posts, theme, and static builds", "prevent_force_push": true}
       ]
     }
   ]

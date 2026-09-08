@@ -1,31 +1,35 @@
-# 贡献规范
+# Contributing
 
-这些约定适用于 xw7qwq 下的仓库。先阅读目标仓库的 README、CONTRIBUTING 和相关开发文档；项目专用要求优先。
+These conventions apply to repositories under xw7qwq. Read the target repository's README, CONTRIBUTING file, and relevant development documentation first; project-specific technical requirements take precedence.
 
-## 分支与提交
+## Language
 
-- `main` 保存已验证的工作。人工改动从最新 `main` 创建短期分支，例如 `feat/submission-filter`、`fix/date-boundary`、`docs/api-guide`、`chore/ci`。
-- 一个分支、一个 PR 尽量解决一个问题。提交标题使用 `feat:`、`fix:`、`docs:`、`test:`、`refactor:`、`chore:` 或 `build(deps):`，后面写清实际变化；正文可用中文或英文。
-- 不把密钥、登录 Cookie、本地配置或不属于仓库的构建产物提交到版本控制。不改写共享分支历史。
-- `gh-pages`、独立文档源与数据同步分支的保留条件见[维护约定](docs/maintenance.md)。不能仅凭分支创建时间或最后更新时间删除分支。
+Use English for documentation, Issues, pull requests, and commit messages. Preserve the original language of archived source material and imported records when it is part of their provenance.
 
-## Pull request
+## Branches and commits
 
-PR 标题说明最终改动，正文说明要解决的问题、改动后的行为和验证结果。界面改动附截图；涉及公开 API、部署、数据格式或配置的改动要同步更新对应文档。
+- `main` contains verified work. Start manual changes from the latest `main` on a short-lived branch, such as `feat/submission-filter`, `fix/date-boundary`, `docs/api-guide`, or `chore/ci`.
+- Keep each branch and PR focused on one problem. Start commit titles with `feat:`, `fix:`, `docs:`, `test:`, `refactor:`, `chore:`, or `build(deps):`, followed by a concrete description of the change.
+- Do not commit secrets, login cookies, local configuration, or build artifacts that do not belong in the repository. Do not rewrite shared branch history.
+- See the [maintenance conventions](docs/maintenance.md) for retaining `gh-pages`, dedicated documentation sources, and data synchronization branches. Branch age or inactivity alone is not a reason to delete a branch.
 
-合并前：
+## Pull requests
 
-1. 阅读完整 diff、已有讨论与目标仓库的检查结果。
-2. 执行项目要求的测试和构建；测试失败时先解决原因。纯文档改动执行适用的文档检查。
-3. 基础分支变化后，更新分支并重新检查，解决冲突与未完成的审查讨论。
-4. 确认没有混入其他工作；依赖更新还要检查变更说明、运行时要求与锁文件。
+Use the PR title to describe the final change. Explain the problem, resulting behavior, and validation in the description. Include screenshots for interface changes. Update the relevant documentation when changing public APIs, deployment, data formats, or configuration.
 
-短期功能、修复、文档和依赖 PR 默认使用 **Squash and merge**，让主分支提交对应一个可回退的改动。同步长期分支时允许 merge commit 保留祖先关系，不对长期分支反复 squash。合并后删除已完成的短期来源分支；尚未合并且有独有内容的分支必须保留。
+Before merging:
 
-单人维护仓库不强制要求无法完成的他人批准，但必须保留 PR、通过必需检查并解决审查讨论。Dependabot 更新遵循同样的验证流程，不凭机器人身份直接合并。
+1. Read the complete diff, existing discussion, and the target repository's check results.
+2. Run the required tests and builds; resolve failures before proceeding. For documentation-only changes, run the applicable documentation checks.
+3. When the base branch changes, update the branch and rerun checks. Resolve conflicts and outstanding review discussions.
+4. Confirm that unrelated work is excluded. For dependency updates, also review release notes, runtime requirements, and lockfiles.
 
-## 报告问题
+Use **Squash and merge** by default for short-lived feature, fix, documentation, and dependency PRs, so each main-branch commit represents one reversible change. Merge commits are allowed when synchronizing long-lived branches to preserve ancestry; do not repeatedly squash those branches. Delete completed short-lived source branches after merging. Retain unmerged branches with unique content.
 
-在对应项目提交 Issue，说明复现步骤、环境、实际结果和预期结果。日志与截图请先脱敏。功能建议应说明使用场景和期望行为；不要求先实现完整方案。
+A repository with a single maintainer does not require approval from another person when that is impractical. It still requires a PR, passing required checks, and resolved review discussions. Apply the same validation process to Dependabot updates; bot authorship alone is not a reason to merge.
 
-许可证以各仓库现有文件为准；本规范不会为未授权的代码或平台数据增加许可证。
+## Reporting issues
+
+Open an Issue in the relevant project with reproduction steps, environment details, actual results, and expected results. Redact sensitive information from logs and screenshots. Feature requests should explain the use case and desired behavior; a complete implementation proposal is not required.
+
+Each repository's existing license applies. These guidelines do not grant a license to otherwise unlicensed code or platform data.

@@ -1,25 +1,25 @@
-![xw7 粉黑地雷系字标](https://raw.githubusercontent.com/xw7qwq/.github/main/assets/xw7-jirai.svg)
+![xw7 pink and black jirai-style wordmark](https://raw.githubusercontent.com/xw7qwq/.github/main/assets/xw7-jirai.svg)
 
 # 🥹 xw7
 
-> Personal telemetry, competitive programming archives, and digital garden.
+> Personal telemetry, competitive programming archives, and a digital garden.
 
-这里是 **xw7** 的个人基础设施与项目集合：用 **macflare** 记录设备状态，用 **codeflare** 沉淀竞赛代码，用 **ojflare** 整理刷题足迹，并围绕 **nfuwari** 构建自己的数字花园。
+**xw7** brings together personal infrastructure and projects: **macflare** for device activity, **codeflare** for contest code, **ojflare** for practice history, and **nfuwari** for articles and notes.
 
-[使用与支持](https://github.com/xw7qwq/.github/blob/main/SUPPORT.md) · [参与贡献](https://github.com/xw7qwq/.github/blob/main/CONTRIBUTING.md) · [安全报告](https://github.com/xw7qwq/.github/blob/main/SECURITY.md) · [维护指南](https://github.com/xw7qwq/.github/blob/main/docs/maintainer-guide.md)
+[Support](https://github.com/xw7qwq/.github/blob/main/SUPPORT.md) · [Contributing](https://github.com/xw7qwq/.github/blob/main/CONTRIBUTING.md) · [Security](https://github.com/xw7qwq/.github/blob/main/SECURITY.md) · [Maintainer guide](https://github.com/xw7qwq/.github/blob/main/docs/maintainer-guide.md)
 
-## 项目导航
+## Projects
 
-| 项目 | 主要用途 | 网站与文档 |
+| Project | Purpose | Website and documentation |
 | --- | --- | --- |
-| [macflare](https://github.com/xw7qwq/macflare) | 用 macOS 原生工具采集音乐、应用和设备状态，提供 JSON API 与 SVG 徽章 | [网站](https://macflare.lucius7.dev/) · [API](https://macflare.lucius7.dev/api) |
-| [codeflare](https://github.com/xw7qwq/codeflare) | 按平台与比赛检索 C++ 源码、算法模板和提交归档 | [源码阅读器](https://codeflare.lucius7.dev/) · [项目文档](https://codeflare.lucius7.dev/docs/) |
-| [ojflare](https://github.com/xw7qwq/ojflare) | 查看多平台解题趋势、Rating 与比赛进度，读取公开统计快照 | [看板](https://ojflare.lucius7.dev/) · [API](https://github.com/xw7qwq/ojflare/blob/main/docs/API.md) |
-| [nfuwari](https://github.com/xw7qwq/nfuwari) | 基于 Astro / Fuwari 的个人博客，承载文章与笔记 | [博客](https://blog.lucius7.cn/) · [写作指南](https://github.com/xw7qwq/nfuwari/blob/main/docs/WRITING.zh-CN.md) |
+| [macflare](https://github.com/xw7qwq/macflare) | Collect music, app, and device activity with native macOS tools; serve a JSON API and SVG badges | [Website](https://macflare.lucius7.dev/) · [API](https://macflare.lucius7.dev/api) |
+| [codeflare](https://github.com/xw7qwq/codeflare) | Browse C++ solutions, algorithm templates, and submissions by platform and contest | [Source browser](https://codeflare.lucius7.dev/) · [Documentation](https://codeflare.lucius7.dev/docs/) |
+| [ojflare](https://github.com/xw7qwq/ojflare) | Track solving trends, ratings, and contests across platforms through public snapshots | [Dashboard](https://ojflare.lucius7.dev/) · [API](https://github.com/xw7qwq/ojflare/blob/main/docs/API.md) |
+| [nfuwari](https://github.com/xw7qwq/nfuwari) | Publish articles and notes with Astro and Fuwari | [Blog](https://blog.lucius7.cn/) · [Writing guide](https://github.com/xw7qwq/nfuwari/blob/main/docs/WRITING.md) |
 
-## 架构概览
+## Architecture
 
-三个项目分别连接设备、本地代码与在线评测平台；数字花园是这些记录统一展示的建设方向。
+The three data projects connect devices, local code, and online judges. The digital garden is their planned shared home.
 
 ```mermaid
 flowchart TB
@@ -36,14 +36,14 @@ flowchart TB
     activity -.-> garden
 ```
 
-实线表示各项目的数据来源与产出；虚线表示面向数字花园的整合方向。具体接入方式与进度以各项目文档和实现为准。
+Solid arrows show current inputs and outputs. Dashed arrows show planned integration with the digital garden; each project's documentation and implementation define its current status.
 
-## 这里记录什么
+## What lives here
 
-- **此刻的状态**：正在听的音乐、使用的应用，以及设备的运行情况。
-- **持续的练习**：竞赛代码、提交记录和不同平台上的刷题积累。
-- **长期的思考**：将零散的实践整理成文章与笔记，逐步丰富自己的数字花园。
+- **Current activity:** music, apps, and device status.
+- **Ongoing practice:** contest code, submissions, and progress across platforms.
+- **Lasting notes:** articles and reflections on that work.
 
-## 了解与交流
+## Get involved
 
-项目相关的问题与建议请提交到对应仓库的 Issues，具体入口见[使用与支持](https://github.com/xw7qwq/.github/blob/main/SUPPORT.md)。贡献前请阅读[组织贡献规范](https://github.com/xw7qwq/.github/blob/main/CONTRIBUTING.md)、[协作行为准则](https://github.com/xw7qwq/.github/blob/main/CODE_OF_CONDUCT.md)与[仓库维护约定](https://github.com/xw7qwq/.github/blob/main/docs/maintenance.md)；项目专用要求与许可证以各仓库说明为准。
+Use the relevant repository's Issues for questions and suggestions; see [Support](https://github.com/xw7qwq/.github/blob/main/SUPPORT.md) for links. Before contributing, read the [contribution guidelines](https://github.com/xw7qwq/.github/blob/main/CONTRIBUTING.md), [code of conduct](https://github.com/xw7qwq/.github/blob/main/CODE_OF_CONDUCT.md), and [maintenance conventions](https://github.com/xw7qwq/.github/blob/main/docs/maintenance.md). Each repository defines its own project requirements and license.

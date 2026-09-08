@@ -1,18 +1,18 @@
-# 协作行为准则
+# Code of conduct
 
-本准则适用于 xw7qwq 组织内的 Issue、Pull request、代码审查和其他项目协作。项目已有专用准则时优先遵循专用说明。
+This code applies to issues, pull requests, code reviews, and other collaboration in xw7qwq. Follow a project's own code of conduct when one exists.
 
-## 交流方式
+## Communication
 
-- 针对代码、数据和论据讨论，说明复现、影响和理由。
-- 尊重不同经验与背景，允许提问、纠正和合理分歧。
-- 审查时提出可执行的建议；被指出问题时可以解释或补充证据。
-- 尊重维护者与贡献者的时间，避免重复催促和跨仓库刷屏。
+- Discuss code, data, and evidence. Explain reproduction steps, impact, and reasoning.
+- Respect different backgrounds and experience levels. Allow questions, corrections, and reasonable disagreement.
+- Offer actionable review suggestions. When a concern is raised, explain your reasoning or provide additional evidence.
+- Respect maintainers' and contributors' time. Avoid repeated demands for updates or posting the same request across repositories.
 
-不接受人身攻击、威胁、歧视、性骚扰、持续骚扰、垃圾信息，以及未经同意公开他人私密资料或凭据的行为。
+Personal attacks, threats, discrimination, sexual harassment, persistent harassment, spam, and sharing someone else's private information or credentials without consent are unacceptable.
 
-## 处理方式
+## Handling concerns
 
-对公开讨论中的越界内容，可以在原讨论中以不重复传播敏感信息的方式提醒维护者。涉及骚扰、威胁、隐私曝光或不适合公开的证据，使用 GitHub 内容菜单中的 **Report content / Report abuse** 向 GitHub 报告；该渠道由 GitHub 处理。安全漏洞使用[私密漏洞报告](https://github.com/xw7qwq/.github/blob/main/SECURITY.md)，不要公开复现细节。
+For inappropriate public discussion, alert a maintainer in the original thread without repeating sensitive information. Report harassment, threats, privacy violations, or evidence unsuitable for public discussion using **Report content / Report abuse** in GitHub's content menu. GitHub handles those reports. Submit security vulnerabilities through [private vulnerability reporting](https://github.com/xw7qwq/.github/blob/main/SECURITY.md), keeping reproduction details private.
 
-维护者可以根据行为和影响要求修改表述、隐藏或移除内容、锁定讨论，或限制继续参与。处理应围绕具体行为，说明适当理由，并保护受影响者的隐私。对处理有异议时，可以在仍可参与的项目讨论中提供新的事实；不要以开设重复 Issue 或骚扰他人表达异议。
+Depending on the behavior and impact, maintainers may request wording changes, hide or remove content, lock discussions, or restrict participation. Responses should address specific conduct, give an appropriate reason, and protect affected people's privacy. If you disagree with a decision, provide new facts in a project discussion where you can still participate. Do not open duplicate issues or harass others to contest a decision.
