@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title description">
+  <title id="title">xw7 — pink and black</title>
+  <desc id="description">A pale pink Gothic xw7 wordmark on velvet black, framed by restrained lace, a black ribbon bow and a silver heart charm.</desc>
+  <!-- Original vector ornaments. Letter outlines: UnifrakturCook, SIL OFL 1.1.
+       Font source: https://github.com/google/fonts/tree/main/ofl/unifrakturcook
+       License: licenses/UnifrakturCook-OFL.txt. No fonts or external assets are loaded. -->
+  <defs>
+    <radialGradient id="velvet" cx="50%" cy="48%" r="65%">
+      <stop offset="0" stop-color="#23131e"/>
+      <stop offset="1" stop-color="#0d0b10"/>
+    </radialGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dea1bd"/>
+      <stop offset="1" stop-color="#ffe1ee"/>
+    </linearGradient>
+    <linearGradient id="satin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#302331"/>
+      <stop offset="0.48" stop-color="#100d14"/>
+      <stop offset="0.7" stop-color="#261c2a"/>
+      <stop offset="1" stop-color="#0c0b10"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#756b7a"/>
+      <stop offset="0.28" stop-color="#f8eaf1"/>
+      <stop offset="0.49" stop-color="#a08d9d"/>
+      <stop offset="0.7" stop-color="#f4dce8"/>
+      <stop offset="1" stop-color="#776271"/>
+    </linearGradient>
+    <pattern id="lace" y="20" width="32" height="34" patternUnits="userSpaceOnUse">
+      <path d="M0 1H32 M0 7H32 M0 8C0 32 32 32 32 8 M5 8C5 24 27 24 27 8 M10 8L16 18L22 8" fill="none" stroke="#a7708e" stroke-width="1"/>
+      <circle cx="16" cy="30" r="1.6" fill="#c08ba5"/>
+    </pattern>
+    <path id="heart" d="M0 32C-9 22-36 6-36-12C-36-36-10-42 0-24C10-42 36-36 36-12C36 6 9 22 0 32Z"/>
+    <path id="sparkle" d="M0-13L3-3L13 0L3 3L0 13L-3 3L-13 0L-3-3Z"/>
+    <g id="bow">
+      <!-- Split ribbon tails. -->
+      <path d="M-10 3C-16 39-19 65-40 99L-14 84L-2 104C14 59 17 29 11 6Z" fill="url(#satin)" stroke="#b47a97" stroke-width="1.7"/>
+      <path d="M8 3C23 35 30 65 51 87L50 62L74 68C46 39 36 16 19-2Z" fill="url(#satin)" stroke="#b47a97" stroke-width="1.7"/>
+      <path d="M-3 20C-4 42-10 67-17 81 M22 19C32 40 39 53 51 64" fill="none" stroke="#6f495f" stroke-width="1.2"/>
+      <!-- Satin loops with a pale stitched edge. -->
+      <path d="M-4-6C-34-36-75-42-76-25L-70 20C-67 34-25 19-3 6Z" fill="url(#satin)" stroke="#cf96b2" stroke-width="2"/>
+      <path d="M4-6C34-36 75-42 76-25L70 20C67 34 25 19 3 6Z" fill="url(#satin)" stroke="#cf96b2" stroke-width="2"/>
+      <path d="M-11-5L-61-24L-57 14L-11 3 M11-5L61-24L57 14L11 3" fill="none" stroke="#725269" stroke-width="1"/>
+      <path d="M-60-22Q-34-15-14-3 M60-22Q34-15 14-3" fill="none" stroke="#b78da4" stroke-width="1" opacity="0.5"/>
+      <path d="M-10-12Q0-17 10-12L12 12Q0 19-12 12Z" fill="#1a131d" stroke="#e4b5cd" stroke-width="1.5"/>
+      <use xlink:href="#heart" transform="translate(0 1) scale(.2)" fill="#e9b0cc"/>
+    </g>
+    <path id="letters" d="M127.930 157.715L133.789 70.312Q77.148 55.664 4.395 15.137Q27.344 134.277 134.766 307.617Q101.074 366.211 75.195 403.809Q65.918 416.992 47.852 418.213Q29.785 419.434 13.184 419.434Q32.227 446.289 59.082 473.145Q85.938 500.000 135.254 527.344Q161.133 474.609 198.730 404.785Q241.211 463.867 288.574 527.344Q351.562 499.023 398.926 477.051L336.426 364.746Q300.781 402.832 265.625 417.480Q239.746 384.277 222.656 361.328Q277.832 263.184 333.984 180.176Q358.887 142.090 400.879 139.160Q334.961 64.941 276.367 15.137Q247.559 75.684 219.482 137.695Q191.406 199.707 159.668 260.742Q127.930 197.266 127.930 157.715ZM634.004 446.289Q702.363 521.484 707.246 527.344L821.504 443.848L884.980 529.297Q919.160 513.184 954.316 471.680Q1029.512 383.301 1043.672 287.109Q1045.137 275.879 1045.137 265.625Q1045.137 233.398 1028.535 213.379L880.098 6.836Q869.844 10.254 792.939 55.420Q716.035 100.586 717.012 102.539L634.492 15.137L464.570 126.953Q494.844 167.480 496.309 200.195L498.750 385.742Q498.750 400.879 484.346 410.889Q469.941 420.898 458.223 429.688L529.512 527.344ZM693.086 145.020Q700.410 161.621 702.363 173.584Q704.316 185.547 704.316 223.145L704.805 323.242Q704.805 342.285 696.504 358.887Q685.273 370.605 679.414 377.197Q673.555 383.789 654.023 396.484Q623.262 375.977 622.285 353.516L616.914 217.773Q615.938 193.848 645.479 174.316Q675.020 154.785 693.086 145.020ZM819.551 181.152Q882.051 149.902 903.047 149.902Q906.465 149.902 909.395 150.879Q947.969 160.645 947.969 206.055Q947.969 215.820 946.016 228.027Q934.297 290.039 905.000 330.566Q875.703 371.094 842.988 394.043Q822.480 373.047 821.992 343.750ZM1279.238 555.176L1223.574 557.129Q1152.773 557.129 1152.773 496.582Q1152.773 487.793 1154.238 478.027Q1140.566 479.980 1113.711 485.352Q1112.246 639.160 1112.246 692.871Q1268.496 687.500 1574.160 681.152Q1476.016 544.434 1428.164 381.348Q1365.664 172.363 1361.270 15.137Q1306.094 19.531 1270.205 22.949Q1234.316 26.367 1179.141 31.250Q1215.273 166.504 1288.760 296.631Q1362.246 426.758 1432.070 558.594Q1432.070 558.594 1279.238 555.176Z"/>
+  </defs>
+
+  <rect width="1200" height="440" rx="12" fill="url(#velvet)"/>
+  <!-- Delicate lace at the hem; the center remains open. -->
+  <g opacity="0.48">
+    <rect x="24" y="20" width="1152" height="34" fill="url(#lace)"/>
+    <rect x="24" y="20" width="1152" height="34" fill="url(#lace)" transform="translate(0 440) scale(1 -1)"/>
+    <path d="M24 44V396 M1176 44V396" fill="none" stroke="#875b74"/>
+    <path d="M31 57V383 M1169 57V383" fill="none" stroke="#875b74" stroke-dasharray="2 6"/>
+  </g>
+
+  <!-- Left ribbon, angled like a hair accessory. -->
+  <use xlink:href="#bow" transform="translate(208 188) rotate(-12)"/>
+
+  <!-- Outlined Gothic lettering, converted to paths for consistent rendering. -->
+  <g transform="translate(323.4603 342.5784) scale(0.350371 -0.350371)" stroke-linejoin="round">
+    <use xlink:href="#letters" transform="translate(10 -19)" fill="#70354f" stroke="#70354f" stroke-width="40"/>
+    <use xlink:href="#letters" fill="url(#pink)" stroke="#b67494" stroke-width="40"/>
+    <use xlink:href="#letters" fill="url(#pink)" stroke="#100d14" stroke-width="27"/>
+    <use xlink:href="#letters" fill="url(#pink)"/>
+  </g>
+
+  <!-- A small ribbon and heart pendant balance the larger bow. -->
+  <g transform="translate(991 150)">
+    <path d="M0 0V49" stroke="#a18b9b" stroke-width="1.5"/>
+    <g fill="none" stroke="url(#silver)" stroke-width="1.6">
+      <ellipse cy="20" rx="3" ry="5"/>
+      <ellipse cy="29" rx="3" ry="5"/>
+      <ellipse cy="38" rx="3" ry="5"/>
+      <ellipse cy="47" rx="4" ry="6"/>
+    </g>
+    <use xlink:href="#bow" transform="scale(.48)"/>
+    <g transform="translate(0 94)">
+      <use xlink:href="#heart" fill="#b992a8" stroke="#21151f" stroke-width="9"/>
+      <use xlink:href="#heart" fill="url(#satin)" stroke="url(#silver)" stroke-width="4"/>
+      <use xlink:href="#heart" transform="scale(.79)" fill="none" stroke="#b9839f" stroke-width=".8"/>
+      <path d="M0-17V12 M-9-6H9" fill="none" stroke="#dfb3cb" stroke-width="4"/>
+      <path d="M0 37V44 M0 44C-10 55-7 65 0 65C7 65 10 55 0 44Z" fill="#e0a8c4" stroke="#a58198" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Sparse jewelry-like highlights. -->
+  <g fill="#ddb6ca">
+    <use xlink:href="#sparkle" transform="translate(315 110) scale(.58)"/>
+    <use xlink:href="#sparkle" transform="translate(900 327) scale(.7)"/>
+    <use xlink:href="#sparkle" transform="translate(1063 216) scale(.38)"/>
+  </g>
+  <g fill="#bd87a4" opacity=".65">
+    <circle cx="331" cy="98" r="1.5"/>
+    <circle cx="887" cy="342" r="1.6"/>
+    <circle cx="1074" cy="205" r="1.2"/>
+  </g>
+</svg>
