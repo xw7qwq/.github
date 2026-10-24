@@ -9,10 +9,14 @@ Keep valid tokens, cookies, personal status snapshots, and sensitive exploit det
 | Affected project | Private report |
 | --- | --- |
 | Organization configuration and workflows | [.github](https://github.com/xw7qwq/.github/security/advisories/new) |
-| Competitive programming archive, reader, and documentation | [codeflare](https://github.com/xw7qwq/codeflare/security/advisories/new) |
-| Solving activity synchronization and dashboard | [ojflare](https://github.com/xw7qwq/ojflare/security/advisories/new) |
+| Competitive programming archive, reader, and documentation | [solutions](https://github.com/xw7qwq/solutions/security/advisories/new) |
+| Solving activity synchronization and dashboard | [oj](https://github.com/xw7qwq/oj/security/advisories/new) |
 | macOS collection and status API | [macflare](https://github.com/xw7qwq/macflare/security/advisories/new) |
-| Blog and build pipeline | [nfuwari](https://github.com/xw7qwq/nfuwari/security/advisories/new) |
+| Blog and build pipeline | [blog](https://github.com/xw7qwq/blog/security/advisories/new) |
+| Panel login, private data API, and MCP authorization | [panel](https://github.com/xw7qwq/panel/security/advisories/new) |
+| Shared UI components | [ui](https://github.com/xw7qwq/ui/security/advisories/new) |
+| Health collection and outbound snapshots | [health](https://github.com/xw7qwq/health/security/advisories/new) |
+| Fava deployment and private backup jobs | [ledger](https://github.com/xw7qwq/ledger/security/advisories/new) |
 
 Include the trigger, a minimal reproduction, impact, affected deployment setup, and suggested mitigations. Use test credentials and synthetic data, and test only environments you own or are authorized to assess. Accessing real user data is unnecessary to demonstrate impact.
 
@@ -24,4 +28,4 @@ Maintainers verify impact and discuss fixes and disclosure in the private report
 
 If credentials have leaked, revoke or rotate them at the relevant service first, then address copies in code, build logs, and history. Deleting the latest file does not invalidate old credentials. Third parties may also have retained public status or static data. Follow project-specific instructions for stopping collection, updating tokens, and retaining data.
 
-Assess dependency alerts against parent dependencies, version constraints, and input paths. The blog's known remaining items are documented in the [dependency review](https://github.com/xw7qwq/nfuwari/blob/main/docs/DEPENDENCY-REVIEW.md). A limited impact assessment does not mean an unpatched dependency has no defects.
+Assess dependency alerts against parent dependencies, version constraints, and input paths. The blog's known remaining items are documented in the [dependency review](https://github.com/xw7qwq/blog/blob/main/docs/DEPENDENCY-REVIEW.md). A limited impact assessment does not mean an unpatched dependency has no defects.

@@ -4,54 +4,213 @@
     {
       "name": ".github",
       "website": "https://github.com/xw7qwq",
-      "topics": ["github-profile", "community-health", "documentation"],
+      "topics": [
+        "github-profile",
+        "community-health",
+        "documentation"
+      ],
       "default_branch": "main",
-      "required_checks": ["repository-check"],
+      "required_checks": [
+        "check"
+      ],
       "branches": [
-        {"name": "main", "purpose": "Organization profile, shared guidelines, and configuration audits", "prevent_force_push": true}
+        {
+          "name": "main",
+          "purpose": "Organization profile, shared guidelines, and configuration audits",
+          "prevent_force_push": true
+        }
       ]
     },
     {
-      "name": "codeflare",
-      "website": "https://codeflare.lucius7.dev",
-      "topics": ["competitive-programming", "algorithms", "cpp", "atcoder", "codeforces", "qoj"],
+      "name": "solutions",
+      "website": "https://lucius7.dev/oj/code/",
+      "topics": [
+        "competitive-programming",
+        "algorithms",
+        "cpp",
+        "atcoder",
+        "codeforces",
+        "qoj"
+      ],
       "default_branch": "main",
-      "required_checks": ["archive"],
+      "required_checks": [
+        "check"
+      ],
       "branches": [
-        {"name": "main", "purpose": "Algorithm solutions, templates, and archive tools", "prevent_force_push": true},
-        {"name": "docs/project-guide", "purpose": "Dedicated documentation sources and builds", "prevent_force_push": true, "required_checks": ["archive", "documentation"]},
-        {"name": "gh-pages", "purpose": "Manually maintained website sources and generated documentation", "prevent_force_push": false}
+        {
+          "name": "main",
+          "purpose": "Algorithm solutions, templates, and archive tools",
+          "prevent_force_push": true
+        },
+        {
+          "name": "docs/project-guide",
+          "purpose": "Dedicated documentation sources and builds",
+          "prevent_force_push": true,
+          "required_checks": [
+            "check"
+          ]
+        },
+        {
+          "name": "gh-pages",
+          "purpose": "Manually maintained website sources and generated documentation",
+          "prevent_force_push": false
+        }
       ]
     },
     {
-      "name": "ojflare",
-      "website": "https://ojflare.lucius7.dev",
-      "topics": ["competitive-programming", "atcoder", "codeforces", "qoj", "nowcoder", "github-pages", "dashboard", "python"],
+      "name": "oj",
+      "website": "https://lucius7.dev/oj/",
+      "topics": [
+        "competitive-programming",
+        "atcoder",
+        "codeforces",
+        "qoj",
+        "nowcoder",
+        "github-pages",
+        "dashboard",
+        "python"
+      ],
       "default_branch": "main",
-      "required_checks": ["check"],
+      "required_checks": [
+        "check"
+      ],
       "branches": [
-        {"name": "main", "purpose": "Dashboard and synchronization tool sources", "prevent_force_push": true},
-        {"name": "data/snapshots", "purpose": "Automatically synchronized snapshots and request status", "prevent_force_push": true}
+        {
+          "name": "main",
+          "purpose": "Dashboard and synchronization tool sources",
+          "prevent_force_push": true
+        },
+        {
+          "name": "data/snapshots",
+          "purpose": "Automatically synchronized snapshots and request status",
+          "prevent_force_push": true
+        }
       ]
     },
     {
       "name": "macflare",
       "website": "https://macflare.lucius7.dev",
-      "topics": ["apple-music", "bash", "cloudflare-workers", "macos", "now-page", "privacy"],
+      "topics": [
+        "apple-music",
+        "bash",
+        "cloudflare-workers",
+        "macos",
+        "now-page",
+        "privacy"
+      ],
       "default_branch": "main",
-      "required_checks": ["worker", "macos-agent"],
+      "required_checks": [
+        "check"
+      ],
       "branches": [
-        {"name": "main", "purpose": "macOS collection agent, Worker API, and website documentation", "prevent_force_push": true}
+        {
+          "name": "main",
+          "purpose": "macOS collection agent, Worker API, and website documentation",
+          "prevent_force_push": true
+        }
       ]
     },
     {
-      "name": "nfuwari",
+      "name": "blog",
       "website": "https://blog.lucius7.cn/",
-      "topics": ["astro", "blog", "fuwari", "github-pages", "katex", "markdown", "typescript"],
+      "topics": [
+        "astro",
+        "blog",
+        "fuwari",
+        "github-pages",
+        "katex",
+        "markdown",
+        "typescript"
+      ],
       "default_branch": "main",
-      "required_checks": ["Lint, check and build"],
+      "required_checks": [
+        "check"
+      ],
       "branches": [
-        {"name": "main", "purpose": "Blog posts, theme, and static builds", "prevent_force_push": true}
+        {
+          "name": "main",
+          "purpose": "Blog posts, theme, and static builds",
+          "prevent_force_push": true
+        }
+      ]
+    },
+    {
+      "name": "panel",
+      "website": "https://lucius7.dev/",
+      "topics": [
+        "cloudflare-workers",
+        "astro",
+        "svelte",
+        "mcp"
+      ],
+      "default_branch": "main",
+      "required_checks": [
+        "check"
+      ],
+      "branches": [
+        {
+          "name": "main",
+          "purpose": "Panel, owner login, public summaries, private read-only API and MCP",
+          "prevent_force_push": true
+        }
+      ]
+    },
+    {
+      "name": "ui",
+      "website": "https://github.com/xw7qwq/ui",
+      "topics": [
+        "svelte",
+        "design-system"
+      ],
+      "default_branch": "main",
+      "required_checks": [
+        "check"
+      ],
+      "branches": [
+        {
+          "name": "main",
+          "purpose": "Shared design tokens and components, versioned with tags",
+          "prevent_force_push": true
+        }
+      ]
+    },
+    {
+      "name": "health",
+      "website": "https://lucius7.dev/health/",
+      "topics": [
+        "google-health",
+        "python"
+      ],
+      "default_branch": "main",
+      "required_checks": [
+        "check"
+      ],
+      "branches": [
+        {
+          "name": "main",
+          "purpose": "Health collection and outbound panel snapshots",
+          "prevent_force_push": true
+        }
+      ]
+    },
+    {
+      "name": "ledger",
+      "website": "https://fava.lucius7.dev/",
+      "topics": [
+        "beancount",
+        "fava",
+        "python"
+      ],
+      "default_branch": "main",
+      "required_checks": [
+        "check"
+      ],
+      "branches": [
+        {
+          "name": "main",
+          "purpose": "Deployment and jobs only; never real financial data",
+          "prevent_force_push": true
+        }
       ]
     }
   ]
