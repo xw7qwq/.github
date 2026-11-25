@@ -4,11 +4,11 @@ xw7 is a collection of personally maintained open-source projects. Choose the re
 
 | Goal | Project | Documentation and feedback |
 | --- | --- | --- |
-| Use the shared panel, owner login, or read-only MCP connector | [Panel](https://lucius7.dev/) | [Deployment and MCP guide](https://github.com/xw7qwq/panel#readme) · [Issues](https://github.com/xw7qwq/panel/issues) |
+| Use the shared panel, owner login, or read-only MCP connector | [Panel](https://panel.lucius7.dev/) | [Deployment and MCP guide](https://github.com/xw7qwq/panel#readme) · [Issues](https://github.com/xw7qwq/panel/issues) |
 | Reuse shared colors, navigation, and components | [UI](https://github.com/xw7qwq/ui) | [Component guide](https://github.com/xw7qwq/ui#readme) · [Issues](https://github.com/xw7qwq/ui/issues) |
 | Collect macOS status, display music and apps, or integrate the status API | [MacFlare](https://macflare.lucius7.dev/) | [API and integration guide](https://macflare.lucius7.dev/api) · [Issues](https://github.com/xw7qwq/macflare/issues) |
-| Find competitive programming solutions, templates, or archive tools | [Solutions](https://lucius7.dev/oj/code/) | [Project documentation](https://codeflare.lucius7.dev/docs/) · [Issues](https://github.com/xw7qwq/solutions/issues) |
-| Explore solving activity, submissions, contest progress, or public statistics | [Practice](https://lucius7.dev/oj/) | [API documentation](https://github.com/xw7qwq/oj/blob/main/docs/API.md) · [Issues](https://github.com/xw7qwq/oj/issues) |
+| Find competitive programming solutions, templates, or archive tools | [Solutions](https://panel.lucius7.dev/oj/code/) | [Project documentation](https://github.com/xw7qwq/solutions/tree/docs/project-guide/docs) · [Issues](https://github.com/xw7qwq/solutions/issues) |
+| Explore solving activity, submissions, contest progress, or public statistics | [Practice](https://panel.lucius7.dev/oj/) | [API documentation](https://github.com/xw7qwq/oj/blob/main/docs/API.md) · [Issues](https://github.com/xw7qwq/oj/issues) |
 | Read the blog, write a post, or configure the theme | [Lucius7's Blog](https://blog.lucius7.cn/) | [Writing guide](https://github.com/xw7qwq/blog/blob/main/docs/WRITING.md) · [Issues](https://github.com/xw7qwq/blog/issues) |
 | Collect health data and push panel snapshots | [Health](https://github.com/xw7qwq/health) | [Deployment guide](https://github.com/xw7qwq/health/blob/main/DEPLOYMENT.md) · [Issues](https://github.com/xw7qwq/health/issues) |
 | Deploy Fava, panel summaries, and private backups | [Ledger](https://github.com/xw7qwq/ledger) | [Deployment guide](https://github.com/xw7qwq/ledger#readme) · [Issues](https://github.com/xw7qwq/ledger/issues) |

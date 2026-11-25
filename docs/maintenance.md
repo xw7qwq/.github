@@ -24,7 +24,7 @@ GitHub Actions provides these checks. Review the Rules settings before renaming 
 
 ## Automated data updates
 
-The daily `oj` sync reads code from `main` and the latest cache from `data/snapshots`. It writes updated `data/sources/` and `public/data/dashboard.json` to the data branch, then publishes the static site. The data branch stores snapshots and is not merged into `main`; data on `main` serves as a baseline for offline development.
+The daily `oj` sync reads code from `main` and the latest cache from `data/snapshots`. It writes updated `data/sources/` and `public/data/dashboard.json` to the data branch, then publishes the data files through GitHub Pages; the root page only redirects to the panel. The data branch stores snapshots and is not merged into `main`; data on `main` serves as a baseline for offline development.
 
 Separate source and data branches let every `main` use the same PR and check requirements without a personal token or bot bypass actor. The data branch allows normal bot pushes while blocking deletion and force pushes. Review workflow write permissions and fixed data paths to keep source changes out of that branch.
 
@@ -33,8 +33,8 @@ Separate source and data branches let every `main` use the same PR and check req
 | Repository / branch | Purpose | Handling |
 | --- | --- | --- |
 | All repositories / `main` | Default source and configuration | Keep; block deletion and force pushes |
-| `solutions` / `docs/project-guide` | Dedicated documentation source and build workflow | Keep; target documentation PRs here and preserve merge ancestry when synchronizing with `main` |
-| `solutions` / `gh-pages` | Manually maintained website source and generated `docs/` | Keep; documentation publishing updates `docs/` automatically, while site changes follow this branch's README checks |
+| `solutions` / `docs/project-guide` | Documentation sources and API contracts, validated but not published as a site | Keep; target documentation PRs here and preserve merge ancestry when synchronizing with `main` |
+| `solutions` / `gh-pages` | Data snapshots for the panel, their scripts, API contract copies, and redirects from the old site | Keep; the `Site snapshots` workflow publishes the two data files, and other changes follow this branch's README checks |
 | `oj` / `data/snapshots` | Successful daily snapshots and request state | Keep; allow normal automated pushes, block deletion and force pushes, and do not merge into the default branch |
 | Completed temporary branches | Features, fixes, documentation, dependencies, or one-time imports | Delete automatically after PR merge; before manual cleanup, check the remote SHA, full diff, and unmerged commits |
 
@@ -65,7 +65,9 @@ These items are documented in their projects and require a separate migration or
 
 Use the purpose names `blog`, `oj`, `solutions`, `health`, `ledger`, `panel`, and `ui`. `macflare` keeps its agent name; `.github` holds organization-wide conventions. Repository renames do not rename production directories, environment variables, or public data hosts automatically.
 
-`ui` owns shared tokens and Svelte components. Consumers pin a reviewed tag such as `v0.1.0`; never depend on a sibling checkout in published code. The panel is the common navigation destination. Public data endpoints remain compatible when old pages redirect.
+`ui` owns shared tokens and Svelte components. Consumers pin a reviewed tag such as `v0.1.1`; never depend on a sibling checkout in published code. The panel is the common navigation destination. Public data endpoints remain compatible when old pages redirect.
+
+The panel is served from `panel.lucius7.dev`. The old `ojflare.lucius7.dev` and `codeflare.lucius7.dev` pages redirect there and keep publishing their data files; `macflare.lucius7.dev` keeps the documentation and the status API. The apex `lucius7.dev` redirects to the blog; the [panel README](https://github.com/xw7qwq/panel#部署) lists the steps for moving the panel there.
 
 The default-branch required CI context is `check`. It may aggregate multiple jobs, and it must fail if any dependency fails or is cancelled. Change workflows and GitHub branch rules together. The solutions documentation branch aggregates archive and documentation validation in the same `check` job.
 

@@ -9,8 +9,8 @@ Keep valid tokens, cookies, personal status snapshots, and sensitive exploit det
 | Affected project | Private report |
 | --- | --- |
 | Organization configuration and workflows | [.github](https://github.com/xw7qwq/.github/security/advisories/new) |
-| Competitive programming archive, reader, and documentation | [solutions](https://github.com/xw7qwq/solutions/security/advisories/new) |
-| Solving activity synchronization and dashboard | [oj](https://github.com/xw7qwq/oj/security/advisories/new) |
+| Competitive programming archive and documentation | [solutions](https://github.com/xw7qwq/solutions/security/advisories/new) |
+| Solving activity synchronization and published data | [oj](https://github.com/xw7qwq/oj/security/advisories/new) |
 | macOS collection and status API | [macflare](https://github.com/xw7qwq/macflare/security/advisories/new) |
 | Blog and build pipeline | [blog](https://github.com/xw7qwq/blog/security/advisories/new) |
 | Panel login, private data API, and MCP authorization | [panel](https://github.com/xw7qwq/panel/security/advisories/new) |

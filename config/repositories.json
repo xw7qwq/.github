@@ -23,7 +23,7 @@
     },
     {
       "name": "solutions",
-      "website": "https://lucius7.dev/oj/code/",
+      "website": "https://panel.lucius7.dev/oj/code/",
       "topics": [
         "competitive-programming",
         "algorithms",
@@ -44,7 +44,7 @@
         },
         {
           "name": "docs/project-guide",
-          "purpose": "Dedicated documentation sources and builds",
+          "purpose": "Documentation sources and API contracts, validated but not published as a site",
           "prevent_force_push": true,
           "required_checks": [
             "check"
@@ -52,14 +52,14 @@
         },
         {
           "name": "gh-pages",
-          "purpose": "Manually maintained website sources and generated documentation",
+          "purpose": "Data snapshots for the panel, their scripts, API contract copies, and redirects from the old site",
           "prevent_force_push": false
         }
       ]
     },
     {
       "name": "oj",
-      "website": "https://lucius7.dev/oj/",
+      "website": "https://panel.lucius7.dev/oj/",
       "topics": [
         "competitive-programming",
         "atcoder",
@@ -67,7 +67,6 @@
         "qoj",
         "nowcoder",
         "github-pages",
-        "dashboard",
         "python"
       ],
       "default_branch": "main",
@@ -77,7 +76,7 @@
       "branches": [
         {
           "name": "main",
-          "purpose": "Dashboard and synchronization tool sources",
+          "purpose": "Synchronization tools and the data-only Pages build",
           "prevent_force_push": true
         },
         {
@@ -105,7 +104,7 @@
       "branches": [
         {
           "name": "main",
-          "purpose": "macOS collection agent, Worker API, and website documentation",
+          "purpose": "macOS collection agent, Worker API, and documentation site",
           "prevent_force_push": true
         }
       ]
@@ -136,7 +135,7 @@
     },
     {
       "name": "panel",
-      "website": "https://lucius7.dev/",
+      "website": "https://panel.lucius7.dev/",
       "topics": [
         "cloudflare-workers",
         "astro",
@@ -176,7 +175,7 @@
     },
     {
       "name": "health",
-      "website": "https://lucius7.dev/health/",
+      "website": "https://panel.lucius7.dev/health/",
       "topics": [
         "google-health",
         "python"
